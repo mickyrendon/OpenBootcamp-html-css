@@ -10,8 +10,65 @@
     <title>Elementos de Interés en Bootstrap</title>
 </head>
 <body>
-    <section class="jumbotron"></section>
-    <section class="form"></section>
-    <section class="card"></section>
+    <section class="container container-fluid bg-light py-5">
+        <h1 class="display-5 fw-bold h1">Custom jumbotron</h1>
+        <p class="col-md-8 fs-5 py-2 display-4">
+            Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.
+        </p>
+        <button class="btn btn-primary btn-lg " type="button" data-bs-toggle="modal" data-bs-target="#modal">Example button</button>
+    </section>
+    <div class="modal fade" id="modal" tabindex="-1" >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <form class="form container px-5 py-5 d-flex flex-column  justify-content-center">
+        <div class="mb-3">
+            <label for="name" class="form-label"></label>
+            <input type="text" class="form-control" id="name" placeholder="Nombre" required>
+        </div>
+        <div class="mb-3">
+            <label for="number" class="form-label"></label>
+            <input type="number" class="form-control" id="number" placeholder="Numero de teléfono" required>
+        </div>
+        <div class="mb-3">
+            <label for="textarea" class="form-label"></label>
+            <textarea class="form-control" id="textarea" rows="3" placeholder="Deje su comentario"></textarea>
+        </div>
+        <button class="btn btn-primary " type="submit">Enviar</button>
+    </form>
+    <section class="container d-flex justify-content-center py-5">
+        <div class="card mb-3 border-dark" style="max-width: 18rem;">
+            <div class="card-body text">
+              <h5 class="card-title">Miguel Rendón</h5>
+              <p class="card-text text-secondary">Soy un desarrollador web Front end estudiando para ser full stack. Disfruto construir soluciones digitales a personas, especialmente cuando ellos tienen emprendimientos o microemprendimientos que les permita tener un lugar en la web.</p>
+            </div>
+            <div class="card-footer bg-transparent border-dark">mickyrendon42@gmail.com</div>
+          </div>
+    </section>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </html>
+<!-- Crea un nuevo documento HTML con el título "Elementos de Interés en Bootstrap"
+Utilizando la página oficial getboostrap.com, añade la última versión de Bootstrap a este documento HTML
+Crea tres secciones
+En la primera sección crea un Jumbotron replicando el que realizamos en el vídeo
+El botón de llamada a la acción debe abrir una ventana modal
+En la segunda sección crea un formulario de contacto con los campos "nombre" (text), "teléfono" (number) y mensaje (textarea)
+En la tercera sección crea una tarjeta con tu perfil de desarrollador/a que contenga lo siguiente
+Tu nombre en el título
+Una breve descripción
+Tu email en el footer -->
