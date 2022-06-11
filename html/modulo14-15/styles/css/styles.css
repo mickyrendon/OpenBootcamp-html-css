@@ -1,0 +1,40 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+.btn-main, .btn-main-sec {
+  padding: 0.4rem 1.75rem;
+  border-radius: 0.25rem;
+  background-color: #0075ff;
+  color: #fcfdfe;
+  border: 1px solid #0075ff;
+}
+.btn-main:hover, .btn-main-sec:hover {
+  background-color: white;
+  color: rebeccapurple;
+}
+.btn-main-sec {
+  font-size: 0.75rem;
+  padding: 0.4rem 1rem;
+}
+
+.wallet-steps {
+  padding: 2rem;
+  max-width: 20rem;
+  text-align: center;
+}
+.wallet-steps .icon-ctnr {
+  padding: 0.5rem 0.75rem;
+  align-self: center;
+  font-size: 1.75rem;
+  border-radius: 10.75rem;
+  box-shadow: 0px 0px 4px 1px #000;
+  background-color: transparent;
+}
+.wallet-steps h4 {
+  margin: 1rem 0;
+  color: #0A0B0D;
+}
+.wallet-steps-text {
+  color: #615e5e;
+  font-size: 0.75rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
