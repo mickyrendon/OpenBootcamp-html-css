@@ -32,9 +32,79 @@
   margin: 1rem 0;
   color: #0A0B0D;
 }
-.wallet-steps-text {
+.wallet-steps-text, header p {
   color: #615e5e;
   font-size: 0.75rem;
+}
+
+header {
+  padding: 1rem 0;
+}
+header .icon-span {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  max-width: 11rem;
+  justify-content: space-between;
+}
+header .icon-span .btc-icon {
+  padding: 0.13rem 0.35rem;
+  font-size: 1rem;
+  background-color: #0075ff;
+  color: #fcfdfe;
+  border-radius: 10.75rem;
+}
+header .icon-span .btc-icon::before {
+  transform: rotate(13deg);
+}
+header .icon-span a {
+  text-decoration: none;
+}
+header .icon-span a .right-arr {
+  color: #0075ff;
+}
+header .icon-span a::before {
+  font-weight: bolder;
+}
+header h1 {
+  color: #0A0B0D;
+}
+header p {
+  margin-bottom: 0;
+}
+
+.call-to-action-ctnr {
+  padding: 0;
+}
+.call-to-action-ctnr label {
+  width: 100%;
+}
+.call-to-action-ctnr button {
+  margin-top: 1rem;
+  background-color: #0075ff;
+  color: #fcfdfe;
+  border: none;
+}
+.call-to-action-ctnr button:hover {
+  background-color: #0075ff;
+  opacity: 0.8;
+  border: 1px solid #0075ff;
+}
+
+@media screen and (min-width: 350px) {
+  .call-to-action-ctnr {
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0.5rem;
+  }
+  .call-to-action-ctnr label, .call-to-action-ctnr button {
+    margin: 0;
+    flex: 1;
+    max-width: 50%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
